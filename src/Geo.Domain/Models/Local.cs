@@ -2,7 +2,7 @@
 
 namespace Geo.Domain.Models;
 
-internal class Local
+public class Local
 {
     public Guid Id { get; set; }
     public string Nome { get; set; }
