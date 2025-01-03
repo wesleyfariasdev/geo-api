@@ -4,6 +4,7 @@ using Geo.Application.Dto.Response;
 using Geo.Application.Services.IService;
 using Geo.Domain.Interface;
 using Geo.Domain.Models;
+using Newtonsoft.Json;
 
 namespace Geo.Application.Services;
 
@@ -48,5 +49,32 @@ public class LocalServices(ILocalRepository _localRepository, IMapper _mapper) :
         if (!sucesso) throw new KeyNotFoundException("Local não encontrado para exclusão.");
 
         return sucesso;
+    }
+
+    public async Task<string> ObterGeoJson()
+    {
+        var locais = await _localRepository.BuscarTodos();
+
+        var geoJson = new
+        {
+            type = "FeatureCollection",
+            features = locais.Select(local => new
+            {
+                type = "Feature",
+                geometry = new
+                {
+                    type = "Point",
+                    coordinates = new[] { local.Coordenadas.X, local.Coordenadas.Y }
+                },
+                properties = new
+                {
+                    id = local.Id,
+                    nome = local.Nome,
+                    categoria = local.Categoria
+                }
+            })
+        };
+
+        return JsonConvert.SerializeObject(geoJson);
     }
 }

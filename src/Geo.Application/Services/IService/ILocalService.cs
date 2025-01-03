@@ -10,4 +10,5 @@ public interface ILocalService
     Task<LocalResponseDto> Criar(LocalRequestDto local);
     Task<LocalResponseDto> Atualizar(LocalRequestDto local);
     Task<bool> Deletar(Guid id);
+    Task<string> ObterGeoJson();
 }
