@@ -2,7 +2,7 @@
 
 namespace Geo.Domain.Interface;
 
-internal interface ILocalRepository
+public interface ILocalRepository
 {
     Task<Local> BuscarLocalPorId(Guid id);
     Task<IEnumerable<Local>> BuscarTodos();
