@@ -5,7 +5,7 @@ using Geo.Domain.Models;
 
 namespace Geo.Application.Mappings;
 
-internal class Mapping : Profile
+public class Mapping : Profile
 {
     public Mapping()
     {
