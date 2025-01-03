@@ -14,5 +14,5 @@ public class LocalRequestDto
     public string Categoria { get; set; }
 
     [Required(ErrorMessage = "As coordenadas são obrigatórias.")]
-    public Point Coordenadas { get; set; }
+    public CoordenadasDto Coordenadas { get; set; }
 }
