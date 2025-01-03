@@ -1,0 +1,6 @@
+services:
+  geoapi:
+    image: ${DOCKER_REGISTRY-}geoapi
+    build:
+      context: .
+      dockerfile: GeoApi/Dockerfile
