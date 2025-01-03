@@ -1,10 +1,5 @@
-﻿using Geo.Application.Dto.Response;
-using Geo.Application.Dto;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Geo.Application.Dto;
+using Geo.Application.Dto.Response;
 
 namespace Tests.Geral;
 

@@ -1,6 +1,4 @@
-﻿using NetTopologySuite.Geometries;
-
-namespace Geo.Application.Dto.Response;
+﻿namespace Geo.Application.Dto.Response;
 
 public class LocalResponseDto
 {

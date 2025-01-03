@@ -3,11 +3,7 @@ using Geo.Application.Dto.Response;
 using Geo.Application.Mappings;
 using Geo.Domain.Models;
 using NetTopologySuite.Geometries;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Tests.Geral;
 
