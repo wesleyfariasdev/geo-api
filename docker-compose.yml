@@ -1,6 +1,31 @@
+version: '3.8'
+
 services:
   geoapi:
     image: ${DOCKER_REGISTRY-}geoapi
     build:
       context: .
       dockerfile: GeoApi/Dockerfile
+    depends_on:
+      - postgres
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Username=postgres;Password=postgres;Database=geoapi_db
+    ports:
+      - "5000:8080"
+    command: >
+      bash -c "until nc -z postgres 5432; do echo 'Aguardando PostgreSQL'; sleep 1; done; dotnet GeoApi.dll"
+
+  postgres:
+    image: postgis/postgis:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=geoapi_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres_data:
