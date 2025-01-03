@@ -14,7 +14,7 @@ public static class IoC
     public static IServiceCollection AddIoCServices(this IServiceCollection services, IConfiguration config)
     {
         services.AddDbContext<Context>(options => options
-         .UseNpgsql(config.GetConnectionString("Dev"), x => x
+         .UseNpgsql(config.GetConnectionString("DEV"), x => x
              .MigrationsAssembly(typeof(Context).Assembly.FullName)));
 
         services.AddScoped<ILocalRepository, LocalRepository>();
