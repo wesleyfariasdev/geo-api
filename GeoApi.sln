@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6D901F31-3C92-4D8A-B79F-EFB83F83DBD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geo.Domain", "src\Geo.Domain\Geo.Domain.csproj", "{1330294F-1A91-4D92-9240-7491A8509753}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geo.Infra.Data", "src\Geo.Infra.Data\Geo.Infra.Data.csproj", "{B7576A53-AE14-4448-B461-C89400FE6B84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1330294F-1A91-4D92-9240-7491A8509753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1330294F-1A91-4D92-9240-7491A8509753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1330294F-1A91-4D92-9240-7491A8509753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1330294F-1A91-4D92-9240-7491A8509753}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7576A53-AE14-4448-B461-C89400FE6B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7576A53-AE14-4448-B461-C89400FE6B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7576A53-AE14-4448-B461-C89400FE6B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7576A53-AE14-4448-B461-C89400FE6B84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1330294F-1A91-4D92-9240-7491A8509753} = {6D901F31-3C92-4D8A-B79F-EFB83F83DBD6}
+		{B7576A53-AE14-4448-B461-C89400FE6B84} = {6D901F31-3C92-4D8A-B79F-EFB83F83DBD6}
+	EndGlobalSection
+EndGlobal
