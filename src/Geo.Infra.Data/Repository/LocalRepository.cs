@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Geo.Infra.Data.Repository;
 
-internal class LocalRepository(Context _context) : ILocalRepository
+public class LocalRepository(Context _context) : ILocalRepository
 {
     public async Task<Local> Criar(Local local)
     {

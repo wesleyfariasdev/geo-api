@@ -2,7 +2,7 @@
 
 namespace Geo.Application.Dto.Request;
 
-internal class LocalRequestDto
+public class LocalRequestDto
 {
     public string Nome { get; set; }
     public string Categoria { get; set; }

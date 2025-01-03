@@ -2,7 +2,7 @@
 
 namespace Geo.Application.Dto.Response;
 
-internal class LocalResponseDto
+public class LocalResponseDto
 {
     public Guid Id { get; set; }
     public string Nome { get; set; }

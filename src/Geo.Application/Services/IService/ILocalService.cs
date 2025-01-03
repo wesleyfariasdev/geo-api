@@ -3,7 +3,7 @@ using Geo.Application.Dto.Response;
 
 namespace Geo.Application.Services.IService;
 
-internal interface ILocalService
+public interface ILocalService
 {
     Task<LocalResponseDto> BuscarLocalPorId(Guid id);
     Task<IEnumerable<LocalResponseDto>> BuscarTodos();

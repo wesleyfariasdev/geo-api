@@ -7,7 +7,7 @@ using Geo.Domain.Models;
 
 namespace Geo.Application.Services;
 
-internal class LocalServices(ILocalRepository _localRepository, IMapper _mapper) : ILocalService
+public class LocalServices(ILocalRepository _localRepository, IMapper _mapper) : ILocalService
 {
     public async Task<LocalResponseDto> Criar(LocalRequestDto localDto)
     {
