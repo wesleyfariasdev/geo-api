@@ -9,6 +9,7 @@ public class Context(DbContextOptions<Context> options) : DbContext(options)
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.HasPostgresExtension("postgis");
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(Context).Assembly);
     }
 }
