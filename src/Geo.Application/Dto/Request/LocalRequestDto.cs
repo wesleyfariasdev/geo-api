@@ -1,5 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Drawing;
+﻿using NetTopologySuite.Geometries;
+using System.ComponentModel.DataAnnotations;
 
 namespace Geo.Application.Dto.Request;
 
