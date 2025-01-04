@@ -25,14 +25,9 @@ https://github.com/wesleyfariasdev/geo-api.git
 Não é necessário configurar o docker-compose ou docker, apenas se tiver conflito de portas
 ```
 
-- Suba o banco de dados PostgreSQL com PostGIS utilizando o comando:
+- Suba o banco de dados PostgreSQL com PostGIS e .NET utilizando o comando:
 ```
 docker-compose up --build
-```
-
-## Execute a aplicação .NET:
-```
-dotnet run
 ```
 
 ###  A API estará disponível em http://localhost:5000.
