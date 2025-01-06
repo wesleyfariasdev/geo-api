@@ -30,5 +30,5 @@ Não é necessário configurar o docker-compose ou docker, apenas se tiver confl
 docker-compose up --build
 ```
 
-###  A API estará disponível em http://localhost:5000.
+###  A API estará disponível em http://localhost:5000/swagger.
 
